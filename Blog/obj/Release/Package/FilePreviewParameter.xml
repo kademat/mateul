@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="kademat-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\kadem_000\\Documents\\Visual\ Studio\ 2013\\Projects\\Blog\\Blog\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\kadem_000\\Documents\\Visual\ Studio\ 2013\\Projects\\Blog\\Blog\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-Blog-20131128023158.mdf;Initial Catalog=aspnet-Blog-20131128023158;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\kadem_000\\Documents\\Visual\ Studio\ 2013\\Projects\\Blog\\Blog\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

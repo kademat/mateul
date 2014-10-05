@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "O mnie";
+}
+
+@{var wiek = DateTime.Now.Year - 1989;
+var mensa = DateTime.Now.Year - 2012;}
+
+
+<div class="row">
+    <div class="col-md-9">
+
+        <h2>@ViewBag.Title</h2>
+        <img src="~/images/mojeZdjecie.png" class="media-object img-circle" width="100" align="LEFT" />
+
+        <article>
+            <p>
+
+                Witam :)<br />
+                Nazywam się <b>Mateusz Kamiński-Drąg</b>. Mam  @wiek lat. Jestem absolwentem Politechniki Gdańskiej, ukończyłem katedrę Algorytmów i Modelowania
+                Systemów na wydziale Elektroniki, Telekomunikacji i Informatyki. Lubię uczyć, od niedawna posiadam również wykształcenie pedagogiczne. Obecnie pracuję
+                jako programista .NET. Moim celem zawodowym jest tworzenie aplikacji webowych w technologiach ASP.NET oraz ASP.NET MVC z wykorzystaniem MS SQL. Obecnie
+                posiadam 4 certyfikaty Microsoft:
+                <ul>
+                    <li>TS: Web Applications Development with Microsoft .NET Framework 4</li>
+                    <li>Programming in HTML5 with JavaScript and CSS3</li>
+                    <li>Programming in C#</li>
+                    <li>Developing ASP.NET MVC 4 Web Applications</li>
+                </ul>
+
+            </p>
+
+            <p>
+                Poza komputerami lubię sport - głównie biegi oraz jazdę na rowerze (moje konto na
+                endomondo: <a href="http://www.endomondo.com/profile/10661456">endo</a>). Bieganie jest dla mnie symbolem tego, że pomimo trudności nie poddajemy.
+                Uważam, że w żadnym sporcie (wykonywanym z umiarem) nie ma przegranych - przegrani zostali w swoich domach.
+            </p>
+            <p>
+                Poza sportem i pracą lubię również czytać książki oraz rozwijać umysł rozwiązując zagadki logiczne (które również zdarza mi się tworzyć :) ).
+                Od @mensa lat jestem członkiem polskiej Mensy.
+            </p>
+        </article>
+    </div>
+    <div class="col-md-3 nav-left">
+
+        <ul class="media-list">
+            <li class="media">
+                <nav>
+                    <h3><span class="glyphicon glyphicon-hand-right"></span> Społeczności</h3>
+                    <a href="https://www.facebook.com/matikd" target="_blank"><img src="~/images/social/facebook.png" class="animate" /></a>
+                    <a href="https://plus.google.com/110857995537747087286" target="_blank"><img src="~/images/social/googleplus.png" class="animate" /></a>
+                    <a href="https://www.linkedin.com/in/kademat" target="_blank"><img src="~/images/social/linkedin.png" class="animate" /></a>
+                </nav>
+            </li>
+            <li>
+                <nav>
+                    <h3><span class="glyphicon glyphicon-certificate"></span> Moje certyfikaty</h3>
+                    <img src="~/images/MCP_2013(rgb)_1519.png" width="100" />
+                    <img src="~/images/MCTS_2013(rgb)_1370.png" width="100" />
+                    <img src="~/images/MS_2013(rgb)_1486_1485.png" width="100" />
+                </nav>
+            </li>
+        </ul>
+    </div>
+</div>
