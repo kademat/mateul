@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Tutorials";
+    Layout = "~/Views/Shared/_LayoutDisqus.cshtml";
+}
+<h2>List of tutorials</h2>
+
+<img src="~/images/tutorials.jpg" class="media-object img-thumbnail margin-left-default" width="300" align="right" />
+<p>Here you can find a lot of programming tutorials:</p>
+
+
+<div class="panel-group" id="accordion">
+
+    <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    GIT tutorials
+                </h4>
+            </div>
+        </a>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <dl>
+                    <dt>@Html.ActionLink("Tutorials", "Tutorials", "Home")</dt>
+                    <dd>Few lines of description</dd>
+                    <dt>@Html.ActionLink("Running", "Running", "Home")</dt>
+                    <dd>Few lines of description</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    ASP.NET tutorials
+
+                </h4>
+            </div>
+        </a>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <dl>
+                    <dt>@Html.ActionLink("Tutorials", "Tutorials", "Home")</dt>
+                    <dd>Few lines of description</dd>
+                    <dt>@Html.ActionLink("Running", "Running", "Home")</dt>
+                    <dd>Few lines of description</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Other tutorials
+                </h4>
+            </div>
+        </a>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                Currently this section is empty :/
+            </div>
+        </div>
+    </div>
+</div>

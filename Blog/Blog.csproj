@@ -152,6 +152,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="images\02octo.jpg" />
+    <Content Include="images\17sept.jpg" />
+    <Content Include="images\26sept.jpg" />
+    <Content Include="images\29 sept.jpg" />
     <Content Include="images\code.png" />
     <Content Include="images\fav.png" />
     <Content Include="images\logo.png" />
@@ -175,8 +179,10 @@
     <Content Include="images\social\tumblr.png" />
     <Content Include="images\social\twitter.png" />
     <Content Include="images\social\youtube.png" />
+    <Content Include="images\tutorials.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\mateul.pubxml" />
     <None Include="Properties\PublishProfiles\test.pubxml">
       <SubType>Designer</SubType>
     </None>
@@ -185,6 +191,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -233,9 +241,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_LayoutBase.cshtml" />
-    <Content Include="Views\Home\CourseSQL.cshtml" />
+    <Content Include="Views\Home\Tutorials.cshtml" />
     <Content Include="Views\Shared\_LayoutDisqus.cshtml" />
     <Content Include="Views\Home\Running.cshtml" />
+    <Content Include="Views\Home\CourseSQLFullOld.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

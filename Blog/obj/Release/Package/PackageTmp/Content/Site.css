@@ -56,9 +56,35 @@ input[type="checkbox"].input-validation-error {
     transition: all 1s ease;
 }
 
-.animate:hover {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: none;
+    .animate:hover {
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+        opacity: 1;
+        filter: none;
+    }
+
+.margin-left-default {
+    margin-left: 10px;
+}
+
+.margin-right-default {
+    margin-right: 10px;
+}
+
+.disable-dot-li {
+    list-style: none;
+}
+
+.endoPost {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-default .panel-heading {
+    background-image:-webkit-gradient(linear,left 0,left 100%,from(#f5f5f5),to(#e8e8e8));
+    background-image:-webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image:-moz-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+    background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5',endColorstr='#ffe8e8e8',GradientType=0);
 }

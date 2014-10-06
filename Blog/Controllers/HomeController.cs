@@ -36,6 +36,12 @@ namespace Blog.Controllers
             return View();
         }
 
+        public ActionResult Tutorials()
+        {
+            ViewBag.Message = "Tutorials";
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Opis.";
