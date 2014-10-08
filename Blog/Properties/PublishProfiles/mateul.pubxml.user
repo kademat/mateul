@@ -299,7 +299,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 10:12:55</publishTime>
     </File>
     <File Include="Views/Home/Tutorials.cshtml">
-      <publishTime>10/06/2014 14:24:52</publishTime>
+      <publishTime>10/07/2014 08:51:50</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>10/05/2014 21:49:43</publishTime>
