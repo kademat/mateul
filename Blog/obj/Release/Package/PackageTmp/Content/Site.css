@@ -46,9 +46,9 @@ input[type="checkbox"].input-validation-error {
 }
 
 .animate {
-    -webkit-opacity: .1;
-    -moz-opacity: .1;
-    opacity: .1;
+    -webkit-opacity: .2;
+    -moz-opacity: .2;
+    opacity: .2;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -87,4 +87,12 @@ input[type="checkbox"].input-validation-error {
     background-image:-moz-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
     background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
     background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5',endColorstr='#ffe8e8e8',GradientType=0);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+}
+
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-brand:focus {
+  background-color: #022f5a;
 }

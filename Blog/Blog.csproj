@@ -144,7 +144,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg">
       <SubType>Designer</SubType>
     </Content>
@@ -152,10 +152,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="images\02octo.jpg" />
-    <Content Include="images\17sept.jpg" />
-    <Content Include="images\26sept.jpg" />
-    <Content Include="images\29 sept.jpg" />
+    <Content Include="images\sunRise.jpg" />
     <Content Include="images\code.png" />
     <Content Include="images\fav.png" />
     <Content Include="images\logo.png" />
@@ -187,7 +184,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\facebookScript.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -201,7 +197,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\testAnimations.js" />
+    <Content Include="Scripts\mineHovers.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -214,6 +210,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TutorialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -245,7 +242,7 @@
     <Content Include="Views\Home\Tutorials.cshtml" />
     <Content Include="Views\Shared\_LayoutDisqus.cshtml" />
     <Content Include="Views\Home\Running.cshtml" />
-    <Content Include="Views\Home\CourseSQLFullOld.cshtml" />
+    <Content Include="Views\Tutorials\GITBasics.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

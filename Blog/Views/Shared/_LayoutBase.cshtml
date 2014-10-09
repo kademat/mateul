@@ -6,31 +6,22 @@
     <div class="col-md-9">
         @RenderBody()
     </div>
-    <div class="col-md-3 nav-left hidden-xs hidden-sm">
-        <h2></h2>
-        <nav class="navigation">
+
+    <div class="col-md-3 nav-left">
+        <nav class="navigation hidden-xs hidden-sm">
             <ul class="media-list">
                 <li class="media">
                     <a class="pull-left" href="#">
                         <img class="media-object" src="~/images/logo.png" />
                     </a>
                     <div class="media-body">
-                        <h4 class="media-heading"><b>About my passions:<br />Programming<br />and running.</b></h4>
+                        <h4 class="media-heading">About my passions:<br />programming<br />and running.</h4>
                     </div>
                 </li>
             </ul>
         </nav>
-        <!--
-        <nav class="navigation">
-            <h3><span class="glyphicon glyphicon-tags"></span> Tags</h3>
-            <span class="label label-primary" data-toggle="tooltip" data-placement="right" data-original-title="0 ;)">ASP.NET</span>
-            <span class="label label-primary" data-toggle="tooltip" data-placement="right" data-original-title="0 ;)">SQL</span>
-            <span class="label label-primary" data-toggle="tooltip" data-placement="right" data-original-title="0 ;)">.NET</span>
-            <span class="label label-primary" data-toggle="tooltip" data-placement="right" data-original-title="0 ;)">Bootstrap</span>
-            <br />
-        </nav>
-            -->
-        <nav class="navigation">
+        <hr />
+        <nav class="navigation hidden-xs hidden-sm">
             <div>
                 <h3><span class="glyphicon glyphicon-globe"></span> Quote of a week</h3>
                 <blockquote class="pull-right">
@@ -39,10 +30,10 @@
                 </blockquote>
             </div>
         </nav>
+        <hr />
         <nav class="navigation">
             <h3><span class="glyphicon glyphicon-thumbs-up"></span> Like it on Facebook</h3>
-            <div class="fb-like-box" data-href="https://www.facebook.com/mateul.com" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="false"></div>
-            <br />
+            <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FMateulcom&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px; width:100%" allowtransparency="true"></iframe>
         </nav>
     </div>
 </div>

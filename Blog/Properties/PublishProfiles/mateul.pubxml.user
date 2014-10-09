@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:45</publishTime>
     </File>
     <File Include="bin/Blog.dll">
-      <publishTime>10/06/2014 14:26:05</publishTime>
+      <publishTime>10/08/2014 13:16:38</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/05/2014 21:49:46</publishTime>
@@ -110,7 +110,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 12:27:45</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>10/06/2014 14:06:21</publishTime>
+      <publishTime>10/08/2014 13:14:38</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>10/05/2014 21:49:44</publishTime>
@@ -220,6 +220,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
+    <File Include="Scripts/facebookScript.js">
+      <publishTime>10/08/2014 11:17:16</publishTime>
+    </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
@@ -251,10 +254,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
     <File Include="Scripts/testAnimations.js">
-      <publishTime>10/06/2014 14:06:34</publishTime>
+      <publishTime>10/08/2014 11:10:17</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>10/06/2014 13:24:06</publishTime>
+      <publishTime>10/08/2014 11:17:09</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
       <publishTime>10/05/2014 21:49:43</publishTime>
@@ -305,7 +308,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/06/2014 13:24:34</publishTime>
+      <publishTime>10/08/2014 13:11:53</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutBase.cshtml">
       <publishTime>10/06/2014 14:15:10</publishTime>

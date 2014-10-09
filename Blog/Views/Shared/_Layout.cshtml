@@ -5,39 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateul.com - programming and running</title>
     <link rel="icon" type="image/png" href="images/fav.png">
-    <script src="~/Scripts/_references.js"></script>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/facebookScript.js"></script>
-    <script src="~/Scripts/testAnimations.js"></script>
+    <script src="~/Scripts/mineHovers.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div id="fb-root"></div>
-
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
+                @Html.ActionLink("Mateul.com", "Index", "Home", new { }, new { @class = "navbar-brand" })
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Mateul.com", "Index", "Home", new { }, new { @class = "navbar-brand" })
             </div>
-
+            <!--Other links on a page-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Tutorials", "Tutorials")</li>
-                    <li>@Html.ActionLink("Running", "Running")</li>
-                    <li>@Html.ActionLink("About me", "About")</li>
+                    <li><a href="@Url.Action("Tutorials")"><span class="glyphicon glyphicon-book"></span> Tutorials</a></li>
+                    <li><a href='@Url.Action("Running")'><span class="glyphicon glyphicon-road"></span> Running</a></li>
+                    <li><a href='@Url.Action("About")'><span class="glyphicon glyphicon-user"></span> About me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Whole body container-->
-    <div class="container body-content">
+    <div class="container">
         @RenderBody()
         <hr />
         <footer>
