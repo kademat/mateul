@@ -156,7 +156,6 @@
     <Content Include="Scripts\shBrushJScript.js" />
     <Content Include="Content\shCore.css" />
     <Content Include="Content\site.css" />
-    <Content Include="Content\tableOfContents.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg">
       <SubType>Designer</SubType>
     </Content>

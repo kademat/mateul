@@ -10,10 +10,11 @@
     overflow: auto;
     margin-left: 2%;
     position: fixed;
-    border: 1px solid #ccc;
+    border: 1px solid darkgreen;
     webkit-border-radius: 6px;
     moz-border-radius: 6px;
     border-radius: 6px;
+    background-color: #f3f8fe;
 }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
@@ -27,6 +28,7 @@
 
 /* Top level header elements */
 .tocify-header {
+    font-size: 18px;
     text-indent: 10px;
 }
 
