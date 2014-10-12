@@ -44,7 +44,7 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-.animate {
+.animate-badge {
     -webkit-opacity: .2;
     -moz-opacity: .2;
     opacity: .2;
@@ -55,7 +55,18 @@ input[type="checkbox"].input-validation-error {
     transition: all 1s ease;
 }
 
-.animate:hover {
+.animate-img > a > img {
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    opacity: .5;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.animate-badge:hover, .animate-img:hover > a > img {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
@@ -68,6 +79,10 @@ input[type="checkbox"].input-validation-error {
 
 .margin-right-default {
     margin-right: 10px;
+}
+
+.margin-right-small {
+    margin-right: 5px;
 }
 
 /*To get effect of clicking the whole panel at tutorials*/
@@ -104,11 +119,16 @@ input[type="checkbox"].input-validation-error {
     font-weight: bold;
 }
 
-a.classname
-{
-    background: url(~/images/logo.png) no-repeat top left;
-     display: block;
-     width: 150px;
-     height: 150px;
-     text-indent: -9999px; /* hides the link text */
+.underline-text {
+    text-decoration: underline;
+}
+
+.tutorials-title {
+    text-decoration: none;
+}
+
+/*no scrolling */
+.syntaxhighlighter { 
+     overflow-y: hidden !important; 
+     overflow-x: auto !important; 
 }

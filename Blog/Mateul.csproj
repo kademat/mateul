@@ -140,11 +140,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery.tocify.css" />
+    <Content Include="Content\shThemeDefault.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.tocify.js" />
+    <Content Include="Scripts\jquery.tocify.min.js" />
+    <Content Include="Scripts\shBrushCSharp.js" />
+    <Content Include="Scripts\shBrushCss.js" />
+    <Content Include="Scripts\shBrushJScript.js" />
+    <Content Include="Content\shCore.css" />
     <Content Include="Content\site.css" />
+    <Content Include="Content\tableOfContents.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg">
       <SubType>Designer</SubType>
     </Content>
@@ -152,6 +164,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="images\nav\about.png" />
+    <Content Include="images\nav\run.png" />
+    <Content Include="images\nav\teacher.png" />
     <Content Include="images\sunRise.jpg" />
     <Content Include="images\code.png" />
     <Content Include="images\fav.png" />
@@ -198,6 +213,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\mineHovers.js" />
+    <Content Include="Scripts\shCore.js" />
+    <Content Include="Scripts\wow.js" />
+    <Content Include="Scripts\wow.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -208,8 +226,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RunningController.cs" />
     <Compile Include="Controllers\TutorialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -232,16 +252,16 @@
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
     <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_LayoutBase.cshtml" />
-    <Content Include="Views\Home\Tutorials.cshtml" />
+    <Content Include="Views\Tutorials\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutDisqus.cshtml" />
-    <Content Include="Views\Home\Running.cshtml" />
+    <Content Include="Views\Running\Index.cshtml" />
     <Content Include="Views\Tutorials\GITBasics.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

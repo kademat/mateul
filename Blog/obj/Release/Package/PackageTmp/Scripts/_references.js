@@ -6,5 +6,4 @@
 /// <reference path="respond.js" />
 /// <reference path="jquery.validate.js" />
 /// <reference path="jquery.validate.unobtrusive.js" />
-/// <reference path="testanimations.js" />
-/// <reference path="facebookscript.js" />
+/// <reference path="minehovers.js" />
