@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateul.com - programming and running</title>
     <link rel="icon" type="image/png" href="images/fav.png">
+    <!--core-->
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+    <!--mine-->
     <script src="~/Scripts/mineHovers.js"></script>
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <!--highlight-->
+    <script src="~/Scripts/shCore.js"></script>
+    <script src="~/Scripts/shBrushJScript.js"></script>
+    <script src="~/Scripts/shBrushCss.js"></script>
+    <script src="~/Scripts/shBrushCSharp.js"></script>
+    <link href="~/Content/shThemeDefault.css" rel="stylesheet" />
+    <link href="~/Content/shCore.css" rel="stylesheet" />
+
+    <!-- tocify -->
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -24,9 +39,15 @@
             <!--Other links on a page-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="@Url.Action("Tutorials")"><span class="glyphicon glyphicon-book"></span> Tutorials</a></li>
-                    <li><a href='@Url.Action("Running")'><span class="glyphicon glyphicon-road"></span> Running</a></li>
-                    <li><a href='@Url.Action("About")'><span class="glyphicon glyphicon-user"></span> About me</a></li>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Tutorials") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "Tutorials")'><img src="~/images/nav/teacher.png" class="margin-right-small" />TUTORIALS</a>
+                    </li>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Running") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "Running")'><img src="~/images/nav/run.png" class="margin-right-small" />RUNNING</a>
+                    </li>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("About") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/about.png" class="margin-right-small" />ABOUT ME</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -42,6 +63,10 @@
     <!--Rendering the scripts-->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <link href="~/Content/jquery.tocify.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/jquery.tocify.min.js"></script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
