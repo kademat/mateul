@@ -18,5 +18,10 @@ namespace Blog.Controllers
         {
             return View();
         }
+
+        public ActionResult JSBasics()
+        {
+            return View();
+        }
     }
 }

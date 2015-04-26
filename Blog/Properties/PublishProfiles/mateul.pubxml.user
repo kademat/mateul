@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/20/2014 19:08:55</publishTime>
     </File>
     <File Include="bin/Blog.dll">
-      <publishTime>10/13/2014 01:27:39</publishTime>
+      <publishTime>04/26/2015 12:31:06</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/20/2014 19:09:08</publishTime>
@@ -68,25 +68,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/20/2014 19:09:47</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>06/20/2014 19:09:20</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>06/20/2014 19:09:16</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>06/20/2014 19:09:19</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>06/20/2014 19:09:18</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Deployment.dll">
-      <publishTime>06/20/2014 19:09:20</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.dll">
-      <publishTime>06/20/2014 19:09:20</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Razor.dll">
-      <publishTime>06/20/2014 19:09:20</publishTime>
+      <publishTime>04/25/2015 21:15:57</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>06/20/2014 19:09:50</publishTime>
@@ -122,7 +122,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2014 14:13:33</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>10/13/2014 01:17:53</publishTime>
+      <publishTime>04/26/2015 12:30:48</publishTime>
+    </File>
+    <File Include="Controllers/TutorialsController.cs">
+      <publishTime>04/26/2015 09:36:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>06/20/2014 19:08:33</publishTime>
@@ -184,6 +187,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/running.png">
       <publishTime>10/04/2014 16:01:44</publishTime>
     </File>
+    <File Include="images/runningPrograms.png">
+      <publishTime>04/25/2015 22:04:58</publishTime>
+    </File>
     <File Include="images/social/digg.png">
       <publishTime>07/12/2014 11:32:00</publishTime>
     </File>
@@ -236,7 +242,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/11/2014 01:52:37</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>10/11/2014 12:10:39</publishTime>
+      <publishTime>04/25/2015 21:16:02</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>06/20/2014 19:08:33</publishTime>
@@ -317,7 +323,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/12/2014 22:44:17</publishTime>
     </File>
     <File Include="Views/About/Index.cshtml">
-      <publishTime>10/13/2014 01:18:36</publishTime>
+      <publishTime>04/25/2015 23:14:38</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
       <publishTime>06/20/2014 19:08:33</publishTime>
@@ -356,7 +362,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 00:42:23</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/13/2014 01:18:11</publishTime>
+      <publishTime>04/26/2015 12:26:48</publishTime>
     </File>
     <File Include="Views/Home/Running.cshtml">
       <publishTime>10/11/2014 01:52:37</publishTime>
@@ -364,29 +370,44 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Home/Tutorials.cshtml">
       <publishTime>10/11/2014 01:52:37</publishTime>
     </File>
+    <File Include="Views/Programs/Index.cshtml">
+      <publishTime>04/26/2015 12:28:12</publishTime>
+    </File>
     <File Include="Views/Running/Index.cshtml">
-      <publishTime>10/13/2014 01:18:01</publishTime>
+      <publishTime>04/25/2015 23:12:56</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>10/03/2014 20:19:22</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/13/2014 00:57:17</publishTime>
+      <publishTime>04/26/2015 12:07:03</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutBase.cshtml">
-      <publishTime>10/12/2014 17:00:53</publishTime>
+      <publishTime>04/25/2015 23:17:58</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutDisqus.cshtml">
       <publishTime>10/11/2014 02:21:03</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutInside.cshtml">
+      <publishTime>04/26/2015 12:26:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutTutorials.cshtml">
+      <publishTime>04/25/2015 23:11:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutTutorialsPrograms.cshtml">
+      <publishTime>04/25/2015 23:11:13</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/22/2014 13:49:59</publishTime>
     </File>
     <File Include="Views/Tutorials/GITBasics.cshtml">
-      <publishTime>10/13/2014 01:19:47</publishTime>
+      <publishTime>04/26/2015 12:28:05</publishTime>
     </File>
     <File Include="Views/Tutorials/Index.cshtml">
-      <publishTime>10/13/2014 01:18:50</publishTime>
+      <publishTime>04/26/2015 12:24:17</publishTime>
+    </File>
+    <File Include="Views/Tutorials/JSBasics.cshtml">
+      <publishTime>04/26/2015 12:26:38</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>06/20/2014 19:08:33</publishTime>
@@ -395,7 +416,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/20/2014 19:08:33</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/13/2014 01:27:46</publishTime>
+      <publishTime>04/25/2015 23:53:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

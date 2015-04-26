@@ -115,6 +115,11 @@ input[type="checkbox"].input-validation-error {
     margin-top: 0;
 }
 
+/* Remove extra space at the begining */
+.col-md-12 > h1 {
+    margin-top: 0;
+}
+
 .bold-text {
     font-weight: bold;
 }
@@ -135,5 +140,10 @@ input[type="checkbox"].input-validation-error {
 
 .active > a {
     color: #f5f5f5;
-    background-color: #7bb8f2;
+    background-color: #7bb8f2!important;
+}
+
+.code {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

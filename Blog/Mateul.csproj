@@ -235,7 +235,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RunningController.cs" />
+    <Compile Include="Controllers\ProgramsController.cs" />
     <Compile Include="Controllers\TutorialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -267,9 +267,11 @@
     <Content Include="Views\Shared\_LayoutBase.cshtml" />
     <Content Include="Views\Tutorials\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutDisqus.cshtml" />
-    <Content Include="Views\Running\Index.cshtml" />
+    <Content Include="Views\Programs\Index.cshtml" />
     <Content Include="Views\Tutorials\GITBasics.cshtml" />
-    <Content Include="Views\Shared\_LayoutTutorials.cshtml" />
+    <Content Include="Views\Shared\_LayoutTutorialsPrograms.cshtml" />
+    <Content Include="Views\Tutorials\JSBasics.cshtml" />
+    <Content Include="Views\Shared\_LayoutInside.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

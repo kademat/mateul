@@ -142,3 +142,8 @@ input[type="checkbox"].input-validation-error {
     color: #f5f5f5;
     background-color: #7bb8f2!important;
 }
+
+.code {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
