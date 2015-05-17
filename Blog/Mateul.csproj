@@ -153,23 +153,22 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery.tocify.css" />
     <Content Include="Content\shThemeDefault.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Icon.png" />
     <Content Include="images\runningPrograms.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\jquery.tocify.js" />
     <Content Include="Scripts\jquery.tocify.min.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\shBrushCSharp.js" />
     <Content Include="Scripts\shBrushCss.js" />
     <Content Include="Scripts\shBrushJScript.js" />
     <Content Include="Content\shCore.css" />
     <Content Include="Content\site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="images\nav\about.png" />
     <Content Include="images\nav\run.png" />
     <Content Include="images\nav\teacher.png" />
@@ -198,8 +197,12 @@
     <Content Include="images\social\twitter.png" />
     <Content Include="images\social\youtube.png" />
     <Content Include="images\tutorials.jpg" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\mateul.pubxml" />
     <None Include="Properties\PublishProfiles\test.pubxml">
       <SubType>Designer</SubType>
@@ -220,6 +223,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\mineHovers.js" />
     <Content Include="Scripts\shCore.js" />
+    <Content Include="Scripts\translations.js" />
     <Content Include="Scripts\wow.js" />
     <Content Include="Scripts\wow.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -272,6 +276,7 @@
     <Content Include="Views\Shared\_LayoutTutorialsPrograms.cshtml" />
     <Content Include="Views\Tutorials\JSBasics.cshtml" />
     <Content Include="Views\Shared\_LayoutInside.cshtml" />
+    <Content Include="Views\Programs\Translations.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

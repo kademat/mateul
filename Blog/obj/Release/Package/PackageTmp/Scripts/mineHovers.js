@@ -3,12 +3,13 @@
     //change glyphicon color and animate it on hover
     $(".navigation").hover(
       function () {
-          $(this).find('.glyphicon').css('color', 'darkgreen');
-          $(this).find('.glyphicon').addClass('animated rubberBand');
+          $(this).find('.glyphicon').not('.noAnimate').css('color', 'darkgreen');
+          $(this).find('.glyphicon').not('.noAnimate').addClass('animated rubberBand');
       },
       function () {
-          $(".glyphicon").css('color', '');
-          $(this).find('.glyphicon').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', $(this).find('.glyphicon').removeClass('animated rubberBand'));
+      	$(".glyphicon").not('.noAnimate').css('color', '');
+      	$(this).find('.glyphicon').not('.noAnimate').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			$(this).find('.glyphicon').not('.noAnimate').removeClass('animated rubberBand'));
       }
     );
 

@@ -1,27 +1,135 @@
 ﻿@{
-    ViewBag.Title = "GITBasics";
-    Layout = "~/Views/Shared/_LayoutInside.cshtml";
+	ViewBag.Title = "GITBasics";
+	Layout = "~/Views/Shared/_LayoutInside.cshtml";
 }
 
-        <h1>Java Script Basics!</h1>
-        <p>
-            In this tutorial I want to show you a few examples of JS code. It's not a full JS tutorial, I just want to show some interesting examples
-            in the code.
-        </p>
-        <h1>Two-dimensions tables</h1>
-        <p>
-            Look at the example:
+<h1>Java Script Part 1!</h1>
+<p>
+	In this tutorial I want to show you a few examples of JS code. It's not a full JS tutorial, I just want to show some interesting examples
+	in the code.
+</p>
+<h1>Two-dimensions tables</h1>
+<h2>How it works</h2>
+<p>
+	Let's say that we want to have two-dimensions table to store the people inside. We can start with creating a simple table like this:
 
-            <iframe class="code" width="100%" height="300" src="//jsfiddle.net/7z02a8cj/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+	<pre class="brush: js">
+		var people = [];
+    </pre>
+	And it's all? Yes! For now we could on the first element of the table create a new table just like here:
+	<pre class="brush: js">
+		var people = [];
+		people[0] = [];
+    </pre>
+	What doest it mean? We have another table at the element nr 0. So we can add elements at position [0][0]!
+	<pre class="brush: js">
+		var people = [];
+		people[0] = [];
+		people[0][0] = "Jan";
+    </pre>
+	It's a simple example how we could use the two-dimensions tables. Anyway you can use this approach to create 3 or more
+	dimensions! When you want to print from the table you can just use:
+	<pre class="brush: js">
+		var people = [];
+		people[0] = [];
+		people[0][0] = "Jan";
+		document.write("First person name : " + people[0][0]);
+	</pre>
+	What gives you output:
+	<pre>First person name : Jan</pre>
+</p>
+<h2>Test it in the code!</h2>
+<p>
+	<iframe class="code" src="//jsfiddle.net/7z02a8cj/embedded/"></iframe>
 
-            As you can see using the two-dimentional tables is not that hard in JS!
-        </p>
-        <h1>Functions</h1>
-        <p>
-            Let's say that we want to create a createProgrammer function:
-            <iframe class="code" width="100%" height="300" src="//jsfiddle.net/su9b56gx/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-            The result:
-            <pre id="result2Script">
-            </pre>
-        </p>
+	As you can see using the two-dimentional tables is not that hard in JS :)
+</p>
+	In my oppinion the best way to learn is to do some examples by yourself, so I created a bigger example of the code that you can modify.
+	Here you can find an example:
+<h1>Functions</h1>
+<h2>Basic knowledge about functions</h2>
+<p>
+	Let's say that we want to create a createProgrammer function (because we need them more :) ):
+	<pre class="brush: js">
+		function createProgrammer()
+		{
+		}
+    </pre>
+	Ok, so now we need to consider what our function should get as parametrs. Let's say that we need a name of the programmer and the lines of code.
+	Remember, that paramerts that we send to the function can't have white spaces, so we can use parametr like linesOfCode.
+	<pre class="brush: js">
+		function createProgrammer(name, linesOfCode)
+		{
+		}
+    </pre>
+	So now let's say that we want a constructor, that creates programmers:
+</p>
+<h2>Let's try to do some more!</h2>
+<p>
+	<pre class="brush: js">
+		function createProgrammer(name, linesOfCode)
+		{
+			return 
+			{
+				name: name,
+				linesOfCode: linesOfCode
+			}
+		}
+    </pre>
+	So now let me create a new programmer:
+	<pre class="brush: js">
+		var programmer1 = createProgrammer("Mateusz", 548654);
+	</pre>
+	But sometimes we could need some calculations in our body of the function. We could do it like this:
+	<pre class="brush: js">
+		function createProgrammer(name, linesOfCode)
+		{
+			return 
+			{
+				name: name,
+				linesOfCode: linesOfCode,
+		        getKiloLinesOfCode: function() 
+				{
+					return Math.round(this.linesOfCode / 1000);
+				}
+			}
+		}
+    </pre>
+	In this case we should remember to add "()" when we would like to use that function like below:
+	<pre class="brush: js">
+		programmer1.getKiloLinesOfCode()
+    </pre>
+	We have also an option to use other object of the function - for example for sum of the lines of code. We could do it like this:
+	<pre class="brush: js">
+		function createProgrammer(name, linesOfCode)
+		{
+			return 
+			{
+				name: name,
+				linesOfCode: linesOfCode,
+		        getKiloLinesOfCode: function() 
+				{
+					return Math.round(this.linesOfCode / 1000);
+				},
+				getSumLinesOfCode: function (anotherProgrammer) 
+				{
+					return parseInt(anotherProgrammer.linesOfCode, 10) + parseInt(this.linesOfCode, 10);
+				}
+			}
+		}
+    </pre>
+	We look into the object named anotherProgrammer and we select from them parametr named linesOfCode and we sum it with current programmer
+	lines of code. This function returns sum of the lines of code in decimal system (what is said by second argument of the function parseInt).
+	When we want to sum the programmers lines of code we need to create 2 programmers and use the function getSumLinesOfCode:
+	<pre class="brush: js">
+		var programmer1 = createProgrammer("Mateusz", 548654);
+		var programmer2 = createProgrammer("Jan", 1232222);
+		var sumLinesOfCode = programmer1.getSumLinesOfCode(programmer2);
+    </pre>
+</p>
+<h2>Make it yourself!</h2>
+<p>
+	<iframe class="code" src="//jsfiddle.net/su9b56gx/embedded/" allowfullscreen="allowfullscreen"></iframe>
+</p>
+	So, as always, I recomend to try it yourself - edit the code and see how it works!
 

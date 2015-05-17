@@ -1,0 +1,50 @@
+﻿@{
+	ViewBag.Title = "Translations";
+	Layout = "~/Views/Shared/_LayoutInside.cshtml";
+}
+<h1>Translations</h1>
+<p>
+	<h2>Small demo</h2>
+	Welcome in translations module!<br />
+	This module is SQL-translation helper. If you need to translate some datas in database you could use this application.<br />
+	At the beginning define number of parametrs that you are going to use in your translations. For example if your structure look like this:
+	<pre class="brush: csharp">
+		(2, 'TextTranslationCode', 'Translation text');
+    </pre>
+	You should use 3 parameters - 1 number and two strings.<br />
+	If you're going to translate it into:
+	<pre class="brush: csharp">
+		(3, 'TextTranslationCode', 'Translated text');
+    </pre>
+	You should specify:<br/>
+	Parametr 1: <b>[nr]</b><br />
+	Parametr 1 translation: <b>[nr]+1</b><br />
+	Parametr 2: <b>[string]</b><br />
+	Parametr 2 translation: <b>[string]</b><br />
+	Parametr 3: <b>[translation]</b><br />
+	Parametr 3 translation: <b>[translation]</b><br />
+	<h2>Possible options</h2>
+	You have 3 basic options to choose:<br/>
+	[nr] - here the number could be verified and used in the future. In translation you can add or substrate a number<br/>
+	[string] - basic string that is inside '', so you don't need to specify it. It also ignores '' and looking for ', to find the end of the string<br />
+	[translation] - it's text that is send for translation. It looks for ' to find the end of the translation text and it make ' from double '<br/>
+	<h2>Working version</h2>
+	Select the number of parametrs:
+	<select class="form-control form-space" id="optionSelector" placeholder="Select nr of options">
+		<option value="" disabled selected style="display:none;">Select number of parametrs</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+	</select>
+
+	<div class="" id="optionChooser">
+	</div>
+
+	<div class="" id="finalResult">
+	</div>
+</p>
+
+<script src="~/Scripts/translations.js"></script>

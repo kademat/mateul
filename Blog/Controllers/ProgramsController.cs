@@ -9,10 +9,16 @@ namespace Blog.Controllers
     public class ProgramsController : Controller
     {
         //
-        // GET: /Running/
+        // GET: /Programs/
         public ActionResult Index()
         {
             return View();
         }
+
+		// GET: /Translations/
+		public ActionResult Translations()
+		{
+			return View();
+		}
 	}
 }

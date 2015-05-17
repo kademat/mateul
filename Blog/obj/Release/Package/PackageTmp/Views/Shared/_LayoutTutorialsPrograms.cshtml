@@ -22,8 +22,16 @@
         </nav>
         <hr />
         <nav class="navigation">
-            <div>
-                <h3><span class="glyphicon glyphicon-paperclip"></span> Find by tags</h3>
+	        <div>
+		        <h3><span class="glyphicon glyphicon-stats"></span> Motivate yourself!</h3>
+				<blockquote class="pull-right">
+					<p id="quoteText">If you can dream it, you can do it.</p>
+					<small><cite title="Source Title" id="quoteAuthor">Walt Disney</cite></small>
+					<button id="loadOtherQuote" class="btn btn-success" style="padding-top: 3px; padding-bottom: 3px; margin-top: 12px;">
+						<span class="glyphicon glyphicon-repeat noAnimate"></span> Another quote
+					</button>
+				</blockquote>
+		        @*<h3><span class="glyphicon glyphicon-paperclip"></span> Find by tags</h3>
 
                 <p>
                     <b>
@@ -33,8 +41,38 @@
                         <a href="#">Test3 <span class="badge">3</span></a>,
                         <a href="#">Test5 <span class="badge">3</span></a>,
                     </b>
-</p>
-            </div>
+				</p>*@
+	        </div>
         </nav>
     </div>
 </div>
+<script type="text/javascript">
+	document.getElementById("loadOtherQuote").onclick = function () {
+		var text = document.getElementById("quoteText");
+		var author = document.getElementById("quoteAuthor");
+		var tableAuthorQuote = [
+			"If you can dream it, you can do it.", "Walt Disney",
+			"There's a way to do it better - find it.", "Thomas A. Edison",
+			"We may encounter many defeats but we must not be defeated.", "Maya Angelou",
+			"In order to succeed, we must first believe that we can.", "Nikos Kazantzakis",
+			"It does not matter how slowly you go as long as you do not stop.", "Confucius",
+			"Always do your best. What you plant now, you will harvest later.", "Og Mandino",
+			"You simply have to put one foot in front of the other and keep going. Put blinders on and plow right ahead.", "George Lucas",
+			"A person ignorant of the possibility of failure can be a halfbrick in the path of the bicycle of history.", "Terry Pratchett",
+			"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.", "Thomas A. Edison",
+			"The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence.","Confucius"
+		];
+		var nrCurrentQuote = 0;
+		for (var i = 0; i < tableAuthorQuote.length; i += 2) {
+			if (text.innerHTML == tableAuthorQuote[i]) {
+				nrCurrentQuote = i;
+				if (nrCurrentQuote + 3 > tableAuthorQuote.length)
+					nrCurrentQuote = -2;
+				break;
+			}
+		}
+		text.innerHTML = tableAuthorQuote[nrCurrentQuote + 2];
+		author.innerHTML = tableAuthorQuote[nrCurrentQuote + 3];
+
+	}
+</script>

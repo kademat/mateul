@@ -146,4 +146,12 @@ input[type="checkbox"].input-validation-error {
 .code {
     margin-top: 10px;
     margin-bottom: 5px;
+	width: 100%;
+	border: none;
+	height: 300px;
+}
+
+.form-space {
+	margin-bottom: 15px;
+	margin-right: 10px;
 }
