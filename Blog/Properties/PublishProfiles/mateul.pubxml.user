@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:45</publishTime>
     </File>
     <File Include="bin/Blog.dll">
-      <publishTime>05/09/2015 13:10:07</publishTime>
+      <publishTime>05/18/2015 00:26:29</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>05/03/2015 17:43:52</publishTime>
@@ -95,16 +95,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/17/2015 23:56:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css">
-      <publishTime>10/06/2014 14:01:56</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/18/2015 00:22:52</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>05/17/2015 23:56:36</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/18/2015 00:26:00</publishTime>
     </File>
     <File Include="Content/jquery-ui.css">
       <publishTime>10/06/2014 12:27:45</publishTime>
@@ -122,25 +128,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>05/09/2015 08:52:12</publishTime>
+      <publishTime>05/17/2015 23:21:18</publishTime>
     </File>
     <File Include="Controllers/TutorialsController.cs">
       <publishTime>04/26/2015 09:36:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>10/05/2014 21:49:44</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>10/05/2014 21:49:44</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>10/05/2014 21:49:44</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>10/05/2014 21:49:44</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>10/05/2014 21:49:43</publishTime>
+    </File>
+    <File Include="Icon.png">
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="images/02octo.jpg">
       <publishTime>10/06/2014 00:25:45</publishTime>
@@ -242,13 +254,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 00:25:45</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/17/2015 23:56:36</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Scripts/facebookScript.js">
       <publishTime>10/08/2014 11:17:16</publishTime>
@@ -292,6 +304,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>05/17/2015 23:56:30</publishTime>
+    </File>
     <File Include="Scripts/respond.js">
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
@@ -313,6 +328,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/testAnimations.js">
       <publishTime>10/08/2014 11:10:17</publishTime>
     </File>
+    <File Include="Scripts/translations.js">
+      <publishTime>05/18/2015 00:08:26</publishTime>
+    </File>
     <File Include="Scripts/wow.js">
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
@@ -320,7 +338,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Views/About/Index.cshtml">
       <publishTime>05/03/2015 17:43:52</publishTime>
@@ -374,7 +392,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/09/2015 13:00:55</publishTime>
     </File>
     <File Include="Views/Programs/Translations.cshtml">
-      <publishTime>05/09/2015 13:02:19</publishTime>
+      <publishTime>05/17/2015 23:21:48</publishTime>
     </File>
     <File Include="Views/Running/Index.cshtml">
       <publishTime>04/25/2015 23:12:56</publishTime>
@@ -419,7 +437,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/09/2015 13:10:58</publishTime>
+      <publishTime>05/18/2015 00:27:11</publishTime>
     </File>
   </ItemGroup>
 </Project>

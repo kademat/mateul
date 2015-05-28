@@ -105,6 +105,6 @@ D:\Mateul\Blog\bin\System.Web.Razor.xml
 D:\Mateul\Blog\bin\System.Web.WebPages.xml
 D:\Mateul\Blog\bin\System.Web.WebPages.Deployment.xml
 D:\Mateul\Blog\bin\System.Web.WebPages.Razor.xml
-D:\Mateul\Blog\obj\Debug\Mateul.csprojResolveAssemblyReference.cache
 D:\Mateul\Blog\obj\Debug\Blog.dll
 D:\Mateul\Blog\obj\Debug\Blog.pdb
+D:\Mateul\Blog\obj\Debug\Mateul.csprojResolveAssemblyReference.cache

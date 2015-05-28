@@ -1,151 +1,160 @@
-﻿/* To have a space between navigation and content */
+﻿
+
+/* To have a space between navigation and content */
 body {
-    padding-top: 70px;
-    padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	/* Background pattern from subtlepatterns.com */
+	background: url('../images/bedge_grunge.png') repeat;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input, select, textarea {
-    max-width: 280px;
+	max-width: 280px;
 }
 
 .nav-border {
-    border: 2px solid black;
+	border: 2px solid black;
 }
 
 /* styles for validation helpers */
 .field-validation-error {
-    color: #b94a48;
+	color: #b94a48;
 }
 
 .field-validation-valid {
-    display: none;
+	display: none;
 }
 
 input.input-validation-error {
-    border: 1px solid #b94a48;
+	border: 1px solid #b94a48;
 }
 
 input[type="checkbox"].input-validation-error {
-    border: 0 none;
+	border: 0 none;
 }
 
 .validation-summary-errors {
-    color: #b94a48;
+	color: #b94a48;
 }
 
 .validation-summary-valid {
-    display: none;
+	display: none;
 }
 
 .animate-badge {
-    -webkit-opacity: .2;
-    -moz-opacity: .2;
-    opacity: .2;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+	-webkit-opacity: .2;
+	-moz-opacity: .2;
+	opacity: .2;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
 .animate-img > a > img {
-    -webkit-opacity: .5;
-    -moz-opacity: .5;
-    opacity: .5;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	opacity: .5;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
 .animate-badge:hover, .animate-img:hover > a > img {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: none;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: none;
 }
 
 .margin-left-default {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .margin-right-default {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .margin-right-small {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 /*To get effect of clicking the whole panel at tutorials*/
 .panel-default .panel-heading {
-    background-image: -webkit-gradient(linear,left 0,left 100%,from(#f5f5f5),to(#e8e8e8));
-    background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
-    background-image: -moz-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
-    background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5',endColorstr='#ffe8e8e8',GradientType=0);
+	background-image: -webkit-gradient(linear,left 0,left 100%,from(#f5f5f5),to(#e8e8e8));
+	background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+	background-image: -moz-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+	background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5',endColorstr='#ffe8e8e8',GradientType=0);
 }
 
 /* To get the same color of hovering the brand */
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-    background-color: #022f5a;
+	background-color: #022f5a;
 }
 
 #fb-root {
-    display: none;
+	display: none;
 }
 
 /* To fill the container and nothing else */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    width: 100% !important;
+	width: 100% !important;
 }
 
 /* Remove extra space at the begining */
 .col-md-9 > h1, .nav, .remove-top-margin {
-    margin-top: 0;
+	margin-top: 0;
+}
+
+/* Remove extra space at the begining */
+.col-md-8 > h1, .nav, .remove-top-margin {
+	margin-top: 0;
 }
 
 /* Remove extra space at the begining */
 .col-md-12 > h1 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .bold-text {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .underline-text {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .tutorials-title {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /*no scrolling */
-.syntaxhighlighter { 
-     overflow-y: hidden !important; 
-     overflow-x: auto !important; 
+.syntaxhighlighter {
+	overflow-y: hidden !important;
+	overflow-x: auto !important;
 }
 
 .active > a {
-    color: #f5f5f5;
-    background-color: #7bb8f2!important;
+	color: #f5f5f5;
+	background-color: #7bb8f2 !important;
 }
 
 .code {
-    margin-top: 10px;
-    margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	width: 100%;
 	border: none;
 	height: 300px;
@@ -154,4 +163,15 @@ input[type="checkbox"].input-validation-error {
 .form-space {
 	margin-bottom: 15px;
 	margin-right: 10px;
+}
+
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	border: #2780e3;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-width: 1px;
 }
