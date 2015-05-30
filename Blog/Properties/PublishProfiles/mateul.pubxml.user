@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:45</publishTime>
     </File>
     <File Include="bin/Blog.dll">
-      <publishTime>05/18/2015 00:26:29</publishTime>
+      <publishTime>05/29/2015 16:01:47</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>05/03/2015 17:43:52</publishTime>
@@ -104,13 +104,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>05/18/2015 00:22:52</publishTime>
+      <publishTime>05/28/2015 23:18:31</publishTime>
     </File>
     <File Include="Content/bootstrap.css.map">
       <publishTime>05/17/2015 23:56:36</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>05/18/2015 00:26:00</publishTime>
+      <publishTime>05/28/2015 23:18:31</publishTime>
     </File>
     <File Include="Content/jquery-ui.css">
       <publishTime>10/06/2014 12:27:45</publishTime>
@@ -119,7 +119,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 12:27:45</publishTime>
     </File>
     <File Include="Content/jquery.tocify.css">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/29/2015 09:50:49</publishTime>
     </File>
     <File Include="Content/shCore.css">
       <publishTime>10/13/2014 10:38:46</publishTime>
@@ -128,7 +128,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>05/17/2015 23:21:18</publishTime>
+      <publishTime>05/29/2015 10:32:51</publishTime>
     </File>
     <File Include="Controllers/TutorialsController.cs">
       <publishTime>04/26/2015 09:36:53</publishTime>
@@ -166,11 +166,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/29 sept.jpg">
       <publishTime>10/06/2014 00:25:45</publishTime>
     </File>
+    <File Include="images/about/MCP_2013%28rgb%29_1519.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/about/MCTS_2013%28rgb%29_1370.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/about/MS_2013%28rgb%29_1486_1485.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/about/running.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/bedge_grunge.png">
+      <publishTime>05/28/2015 23:46:22</publishTime>
+    </File>
     <File Include="images/code.png">
       <publishTime>10/05/2014 21:49:44</publishTime>
     </File>
     <File Include="images/fav.png">
       <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/home/code.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/home/runningPrograms.png">
+      <publishTime>05/03/2015 17:43:52</publishTime>
+    </File>
+    <File Include="images/home/tutorials.jpg">
+      <publishTime>10/06/2014 00:25:45</publishTime>
     </File>
     <File Include="images/logo.png">
       <publishTime>10/05/2014 21:49:44</publishTime>
@@ -201,6 +225,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="images/runningPrograms.png">
       <publishTime>05/03/2015 17:43:52</publishTime>
+    </File>
+    <File Include="images/shared/bedge_grunge.png">
+      <publishTime>05/28/2015 23:46:22</publishTime>
+    </File>
+    <File Include="images/shared/fav.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/shared/logo.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
+    </File>
+    <File Include="images/shared/minePhoto.png">
+      <publishTime>10/05/2014 21:49:44</publishTime>
     </File>
     <File Include="images/social/digg.png">
       <publishTime>10/05/2014 21:49:44</publishTime>
@@ -247,6 +283,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/social/youtube.png">
       <publishTime>10/05/2014 21:49:44</publishTime>
     </File>
+    <File Include="images/squared_metal.png">
+      <publishTime>05/28/2015 23:11:03</publishTime>
+    </File>
     <File Include="images/sunRise.jpg">
       <publishTime>10/06/2014 00:25:45</publishTime>
     </File>
@@ -281,10 +320,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2014 10:38:46</publishTime>
     </File>
     <File Include="Scripts/jquery.tocify.js">
-      <publishTime>10/13/2014 10:38:46</publishTime>
+      <publishTime>05/28/2015 23:53:48</publishTime>
     </File>
     <File Include="Scripts/jquery.tocify.min.js">
-      <publishTime>10/13/2014 10:38:46</publishTime>
+      <publishTime>05/28/2015 23:53:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery.tocify.min.js.map">
+      <publishTime>05/28/2015 23:53:48</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>05/03/2015 17:43:52</publishTime>
@@ -299,7 +341,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2015 17:43:52</publishTime>
     </File>
     <File Include="Scripts/mineHovers.js">
-      <publishTime>05/09/2015 12:49:46</publishTime>
+      <publishTime>05/29/2015 15:51:10</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>10/05/2014 21:49:43</publishTime>
@@ -329,7 +371,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/08/2014 11:10:17</publishTime>
     </File>
     <File Include="Scripts/translations.js">
-      <publishTime>05/18/2015 00:08:26</publishTime>
+      <publishTime>05/26/2015 15:36:00</publishTime>
     </File>
     <File Include="Scripts/wow.js">
       <publishTime>10/13/2014 10:38:46</publishTime>
@@ -341,7 +383,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/17/2015 23:56:30</publishTime>
     </File>
     <File Include="Views/About/Index.cshtml">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/29/2015 15:51:16</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
       <publishTime>10/05/2014 21:49:43</publishTime>
@@ -380,7 +422,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/06/2014 00:42:23</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/29/2015 10:31:37</publishTime>
     </File>
     <File Include="Views/Home/Running.cshtml">
       <publishTime>10/11/2014 01:52:37</publishTime>
@@ -392,7 +434,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/09/2015 13:00:55</publishTime>
     </File>
     <File Include="Views/Programs/Translations.cshtml">
-      <publishTime>05/17/2015 23:21:48</publishTime>
+      <publishTime>05/29/2015 15:52:56</publishTime>
     </File>
     <File Include="Views/Running/Index.cshtml">
       <publishTime>04/25/2015 23:12:56</publishTime>
@@ -401,22 +443,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/03/2015 17:43:52</publishTime>
+      <publishTime>05/29/2015 10:36:21</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutBase.cshtml">
-      <publishTime>05/09/2015 11:58:35</publishTime>
+      <publishTime>05/29/2015 10:34:54</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutDisqus.cshtml">
       <publishTime>10/13/2014 10:38:47</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInside.cshtml">
-      <publishTime>05/09/2015 11:47:24</publishTime>
+      <publishTime>05/29/2015 00:16:55</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutTutorials.cshtml">
       <publishTime>04/25/2015 23:11:13</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutTutorialsPrograms.cshtml">
-      <publishTime>05/09/2015 12:53:01</publishTime>
+      <publishTime>05/29/2015 10:35:49</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>10/05/2014 21:49:43</publishTime>
@@ -425,19 +467,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/09/2015 12:58:24</publishTime>
     </File>
     <File Include="Views/Tutorials/Index.cshtml">
-      <publishTime>05/09/2015 11:20:36</publishTime>
+      <publishTime>05/29/2015 09:56:21</publishTime>
     </File>
     <File Include="Views/Tutorials/JSBasics.cshtml">
       <publishTime>05/09/2015 11:25:20</publishTime>
     </File>
     <File Include="Views/web.config">
-      <publishTime>10/05/2014 21:49:43</publishTime>
+      <publishTime>05/26/2015 12:49:25</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>10/05/2014 21:49:43</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/18/2015 00:27:11</publishTime>
+      <publishTime>05/29/2015 00:00:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

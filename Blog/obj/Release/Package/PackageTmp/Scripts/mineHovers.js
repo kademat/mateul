@@ -36,7 +36,7 @@
     //for certification list in about page (small one)
     $(".certification").hover(
       function () {
-          $(this).find('.glyphicon').css('color', 'darkblue');
+          $(this).find('.glyphicon').css('color', 'blue');
           $(this).find('.glyphicon').addClass('animated flipInX');
       },
       function () {

@@ -1,10 +1,11 @@
-﻿using Blog.Models;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Blog.Controllers
 {
     public class HomeController : Controller
     {
+
+		//GET: /Home/
         public ActionResult Index(int? id)
         {
             return View(id);

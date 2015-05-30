@@ -23,7 +23,8 @@ function displayDate() {
 			'<option value="" disabled selected style="display:none;">Select your option</option>' +
 			'<option value="1">[nr]</option>' +
 			'<option value="2">[string]</option>' +
-			'<option value="3">[translation]</option>' +
+			'<option value="3">[translation_pl]</option>' +
+			'<option value="4">[translation_eng]</option>' +
 			'</select>';
 		var translatedId = "translatedText" + i.toString();
 		textboxes += '<label class="control-label" for="' + translatedId + '" > Translation for ' + i + ' </label> ';
@@ -35,7 +36,7 @@ function displayDate() {
 		textboxes += '</div>';
 	}
 	textboxes += '<br/><br/><textarea class="form-control" id="translationsTextarea" style="max-width: none;" rows="8" placeholder="Put here your translations!"></textarea>' +
-		'<button class="btn btn-success" style="padding-top: 9px; padding-bottom: 9px; margin-top: 12px;" onclick="evaluate(this)">' +
+		'<button class="btn btn-success" style="padding-top: 9px; padding-bottom: 9px; margin-top: 12px;" id="buttonTranslation">' +
 		'<span class="glyphicon glyphicon-book noAnimate"></span>' +
 		' Translate it!</button>';
 
@@ -44,14 +45,26 @@ function displayDate() {
 
 	$('#optionChooser').hide();
 	$('#optionChooser').fadeIn("slow");
+
+	$("#buttonTranslation").click(function () {
+		
+		var translations = $("#translationsTextarea").val();
+		translations = translations.split('\n');
+		var translationResult = "";
+		for(var i=0;i<translations.length;i++) {
+			translationResult += translations[i];
+			translationResult += '<br\>' + 'Translated into:' + '<br\>';
+			translationResult += translations[i] + '<br\>';
+		}
+		document.getElementById("finalResult").innerHTML = translationResult;
+	});
 }
 
 function myFunction(sel) {
 	
 	var selectionTranslation = document.getElementById('translatedText' + sel.id.substring(sel.id.length - 1));
 	var selectionOk = document.getElementById('gly' + sel.id.substring(sel.id.length - 1));
-	selectionOk.removeClass("glyphicon-remove");
-	selectionOk.addClass("glyphicon-ok wow bounceInLeft animated");
+	//selectionOk.addClass("glyphicon-ok wow bounceInLeft animated");
 	var length = selectionTranslation.options.length;
 	for (var i = 0; i < length; i++) {
 		selectionTranslation.options[i] = null;
@@ -74,20 +87,8 @@ function myFunction(sel) {
 	else if (sel.value == 2) {
 		selectionTranslation.add(new Option("[string]", "[string]"));
 	}
-	else if (sel.value == 3) {
-		selectionTranslation.add(new Option("[translation]", "[translation]"));
+	else if (sel.value >= 3) {
+		selectionTranslation.add(new Option("[translation_pl]", "[translation_pl]"));
+		selectionTranslation.add(new Option("[translation_eng]", "[translation_eng]"));
 	}
-}
-
-
-function evaluate(e) {
-	var translations = document.getElementById("translationsTextarea").innerText;
-	translations = translations.split('\n');
-	var translationResult = "";
-	for (var translation in translations.split('\n')) {
-		translationResult += translation;
-		translationResult += '\n' + 'Translated into:' + '\n';
-		translationResult += translation;
-	}
-	document.getElementById("finalResult").innerHTML = translationResult;
 }
