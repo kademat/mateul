@@ -2,8 +2,10 @@
 	ViewBag.Title = "Translations";
 	Layout = "~/Views/Shared/_LayoutInside.cshtml";
 }
-<h1>Translations</h1>
 <p>
+	<h1>Translations</h1>
+	<h2>Short problem description</h2>
+	In many proffesional sites people using translations. They're expecting that their website will be friendly and well-designed for all the people from other countries. But in many cases this process is finished at the end of development process. It may cause some bugs like the bug below:
 	<h2>Small demo</h2>
 	Welcome in translations module!<br />
 	This module is SQL-translation helper. If you need to translate some datas in database you could use this application.<br />
@@ -16,7 +18,7 @@
 	<pre class="brush: csharp">
 		(3, 'TextTranslationCode', 'Translated text');
     </pre>
-	You should specify:<br/>
+	You should specify:<br />
 	Parametr 1: <b>[nr]</b><br />
 	Parametr 1 translation: <b>[nr]+1</b><br />
 	Parametr 2: <b>[string]</b><br />
@@ -24,23 +26,39 @@
 	Parametr 3: <b>[translation]</b><br />
 	Parametr 3 translation: <b>[translation]</b><br />
 	<h2>Possible options</h2>
-	You have 3 basic options to choose:<br/>
-	[nr] - here the number could be verified and used in the future. In translation you can add or substrate a number<br/>
+	You have 3 basic options to choose:<br /> 
+	[nr] - here the number could be verified and used in the future. In translation you can add or substrate a number<br />
 	[string] - basic string that is inside '', so you don't need to specify it. It also ignores '' and looking for ', to find the end of the string<br />
-	[translation] - it's text that is send for translation. It looks for ' to find the end of the translation text and it make ' from double '<br/>
-	<h2>Working version</h2>
-	Select the number of parametrs:
+	[translation] - it's text that is send for translation. It looks for ' to find the end of the translation text and it make ' from double '<br />
+	<h1>Working version</h1>
+
+	<div class="form-group">
+		<label for="exampleTextToTranslate">Put here an example translation:</label>
+		<input type="text" class="form-control" id="exampleTextToTranslate" placeholder="Your example translation">
+	</div>
+	<div class="form-group">
+		<label for="exampleTranslation">Put here expected result of the translation:</label>
+		<input type="text" class="form-control" id="exampleTranslation" placeholder="Your translated text">
+	</div>
+
+	<button class="btn btn-success" style="padding-top: 9px; padding-bottom: 9px; margin-top: 12px;" id="buttonTranslation">
+		<span class="glyphicon glyphicon-book noAnimate"></span> Learn thow to translate
+	</button>
+
 	<select class="form-control form-space" id="optionSelector" placeholder="Select nr of options">
 		<option value="" disabled selected style="display:none;">Select number of parametrs</option>
 		<option value="1">1</option>
 		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
 	</select>
 
-	<div class="" id="optionChooser">
-	</div>
+
+	<br /><br />
+	<textarea class="form-control" id="translationsTextarea" style="max-width: none;" rows="8"
+	          placeholder="Put here your translations!" ></textarea>
+	<button class="btn btn-success" style="padding-top: 9px; padding-bottom: 9px; margin-top: 12px;" id="buttonTranslation">
+		<span class="glyphicon glyphicon-book noAnimate"></span> Translate it
+	</button>
+
 
 	<div class="" id="finalResult">
 	</div>
