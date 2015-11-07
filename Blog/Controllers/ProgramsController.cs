@@ -16,5 +16,10 @@ namespace Blog.Controllers
 		{
 			return View();
 		}
-	}
+
+        public ActionResult Radious()
+        {
+            return View();
+        }
+    }
 }

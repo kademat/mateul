@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mateul.com - programming and running</title>
+    <title>jstcode.com - just simple typing code</title>
     <link rel="icon" type="image/png" href="../../images/shared/fav.png" alt="Fav ico">
     <!--core-->
-	<script src="~/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
     <script src="~/Scripts/wow.min.js"></script>
     <!--mine-->
     <script src="~/Scripts/mineHovers.js"></script>
@@ -24,10 +24,23 @@
 
 </head>
 <body>
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                @Html.ActionLink("Mateul.com", "Index", "Home", new { }, new { @class = "navbar-brand" })
+
+                @Html.ActionLink("jstcode.com", "Index", "Home", new { }, new { @class = "navbar-brand" })
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,13 +51,13 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Tutorials") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Tutorials")'><img src="~/images/nav/teacher.png" class="margin-right-small" />TUTORIALS</a>
+                        <a href='@Url.Action("Index", "Tutorials")'><img src="~/images/nav/Braces-WF.png" class="margin-right-small" />CODES</a>
                     </li>
                     <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Programs") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Programs")'><img src="~/images/nav/run.png" class="margin-right-small" />PROGRAMS</a>
+                        <a href='@Url.Action("Index", "Programs")'><img src="~/images/nav/Shape cube-WF.png" class="margin-right-small" />EXAMPLES</a>
                     </li>
                     <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("About") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/about.png" class="margin-right-small" />ABOUT ME</a>
+                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/business-man.png" class="margin-right-small" />ABOUT ME</a>
                     </li>
                 </ul>
             </div>
@@ -53,10 +66,47 @@
     <!--Whole body container-->
     <div class="container">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - mateul.com. This page using <a href="http://glyphicons.com/">glyphicons</a>.</p>
-        </footer>
+
+
+        <div class="row shadows footer">
+            <footer>
+                <div class="beam"></div>
+                <div style="background-color: #888; padding: 15px; color: #ddd" class="col-sm-12 col-md-12">
+                    <div class="col-sm-4 col-md-4">
+                        <img src="~/images/shared/logoWhite.png" style="vertical-align: middle" height="36" />
+                        <span style="font-size: 25px; vertical-align: middle;">jstcode.com<br /></span>
+                        <hr class="navigation" />
+                        <span>
+                            You are allowed to use all the codes and examples that you can find on the website.
+                        </span>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <span style="font-size: 25px; vertical-align: middle; height: 30px;">Contact me<br /></span>
+                        <hr class="navigation" />
+                        <span>
+                            e-mail: kademat[at]gmail.com
+                        </span>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <span style="font-size: 25px;">Navigate</span><hr class="navigation" />
+                        @Html.ActionLink("Main page", "Index", "Home", new { }, new { @class = "bigger-navigate-item" })
+                        <hr class="navigation-smaller" />
+                        @Html.ActionLink("Codes", "Index", "Tutorials", new { }, new { @class = "bigger-navigate-item" })
+                        <hr class="navigation-smaller" />
+                        @Html.ActionLink("Examples", "Index", "Programs", new { }, new { @class = "bigger-navigate-item" })
+                        <hr class="navigation-smaller" />
+                        @Html.ActionLink("About me", "Index", "About", new { }, new { @class = "bigger-navigate-item" })
+                        <hr class="navigation-smaller" />
+                    </div>
+                </div>
+                <div style="background-color: #444; color: #ddd">
+                    <span style="color: white; padding: 10px;">
+                        &copy; @DateTime.Now.Year - jstcode.com. This page using <a href="http://glyphicons.com/" target="_blank">glyphicons</a>.
+                    </span>
+                </div>
+            </footer>
+        </div>
     </div>
     <!--Rendering the scripts-->
     @Scripts.Render("~/bundles/jquery")
@@ -64,7 +114,7 @@
     <link href="~/Content/jquery.tocify.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-ui.min.js"></script>
     <script src="~/Scripts/jquery.tocify.min.js"></script>
-	<script src="/Scripts/quotes.js"></script>
+    <script src="/Scripts/quotes.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -2,8 +2,7 @@
 body {
 	padding-top: 50px;
 	padding-bottom: 20px;
-	/* Background pattern from subtlepatterns.com */
-	background: url('../images/shared/bedge_grunge.png') repeat;
+	background-color: #EEE;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,7 +20,7 @@ input, select, textarea {
 	border: 2px solid black;
 }
 
-/* styles for validation helpers */
+/* Styles for validation helpers */
 .field-validation-error {
 	color: #b94a48;
 }
@@ -100,7 +99,28 @@ input[type="checkbox"].input-validation-error {
 /* To get the same color of hovering the brand */
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-	background-color: #022f5a;
+	background-color: #1967BE;
+}
+
+.navbar-brand {
+    background: url(../images/shared/logoWhite.png) no-repeat left;
+    display: block;
+    width: 160px;
+    text-align: right;
+}
+
+.beam {
+    height: 10px;
+    background-color: #999;
+}
+
+.row.footer.shadows {
+    background-color: #444;
+    padding-top: 0px;
+	padding-bottom: 0px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 #fb-root {
@@ -163,13 +183,32 @@ input[type="checkbox"].input-validation-error {
 	margin-right: 10px;
 }
 
-.row {
+.row.shadows {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: white;
-	border: #2780e3;
-	border-right-style: dotted;
-	border-bottom-style: dotted;
-	border-left-style: dotted;
-	border-width: 1px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+hr.navigation {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid #ddd;
+}
+
+hr.navigation-smaller {
+    border-top: 1px solid #999;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.bigger-navigate-item {
+    color: white;
+}
+
+.bigger-navigate-item:hover {
+    color: white;
+    font-weight: bold;
 }

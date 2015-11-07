@@ -1,20 +1,10 @@
-﻿
-$('select').change(function () {
-	if ($(this).children('option:first-child').is(':selected')) {
-		$(this).addClass('placeholder');
-	} else {
-		$(this).removeClass('placeholder');
-	}
-});
-
-document.getElementById('optionSelector').addEventListener('change', displayDate, false);
-
-function displayDate() {
+﻿$('#optionSelector').change(function () {
 
 	var e = document.getElementById('optionSelector');
 	var choosenValue = e.options[e.selectedIndex].value;
 
 	var textboxes = "";
+
 	for (var i = 1; i <= choosenValue; i++) {
 		var initialId = "initialText" + i.toString();
 		textboxes += '<div class="form-inline">';
@@ -32,7 +22,7 @@ function displayDate() {
 			'<option value="" disabled selected style="display:none;">Select parametr first!</option>' +
 			'</select>';
 
-		textboxes += '<span class="glyphicon glyphicon-remove noAnimate" id="gly' + i.toString() +'"></span>';
+		textboxes += '<span class="glyphicon glyphicon-remove noAnimate" id="gly' + i.toString() + '"></span>';
 		textboxes += '</div>';
 	}
 	textboxes += '<br/><br/><textarea class="form-control" id="translationsTextarea" style="max-width: none;" rows="8" placeholder="Put here your translations!"></textarea>' +
@@ -47,21 +37,27 @@ function displayDate() {
 	$('#optionChooser').fadeIn("slow");
 
 	$("#buttonTranslation").click(function () {
-		
+
 		var translations = $("#translationsTextarea").val();
 		translations = translations.split('\n');
 		var translationResult = "";
-		for(var i=0;i<translations.length;i++) {
+		for (var i = 0; i < translations.length; i++) {
 			translationResult += translations[i];
 			translationResult += '<br\>' + 'Translated into:' + '<br\>';
+			translationResult += '<div class="form-group">' +
+				'<label for="exampleInputPassword1">Translated into</label>' +
+				'<div class="input-group-addon">$</div>' +
+	  ' <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">' +
+	  '<div class="input-group-addon">.00</div>' +
+				'</div>';
 			translationResult += translations[i] + '<br\>';
 		}
 		document.getElementById("finalResult").innerHTML = translationResult;
 	});
-}
+});
 
 function myFunction(sel) {
-	
+
 	var selectionTranslation = document.getElementById('translatedText' + sel.id.substring(sel.id.length - 1));
 	var selectionOk = document.getElementById('gly' + sel.id.substring(sel.id.length - 1));
 	//selectionOk.addClass("glyphicon-ok wow bounceInLeft animated");
@@ -92,3 +88,5 @@ function myFunction(sel) {
 		selectionTranslation.add(new Option("[translation_eng]", "[translation_eng]"));
 	}
 }
+
+
