@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Blog
+namespace jstcode
 {
     public class FilterConfig
     {

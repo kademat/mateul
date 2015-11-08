@@ -50,14 +50,19 @@
             <!--Other links on a page-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Tutorials") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Tutorials")'><img src="~/images/nav/Braces-WF.png" class="margin-right-small" />CODES</a>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Aspnet") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "Aspnet")'><img src="~/images/nav/braces.png" class="margin-right-small"/>ASP.NET</a>
                     </li>
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Programs") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Programs")'><img src="~/images/nav/Shape cube-WF.png" class="margin-right-small" />EXAMPLES</a>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Htmljs") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "Htmljs")'><img src="~/images/nav/codeTag.png" class="margin-right-small"/>HTML & JS
+                        </a>
+                    </li>
+                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Databases") ? "underline-text" : "")">
+                        <a href='@Url.Action("Index", "Databases")'><img src="~/images/nav/database.png" class="margin-right-small" />DATABASES
+                        </a>
                     </li>
                     <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("About") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/business-man.png" class="margin-right-small" />ABOUT ME</a>
+                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/businessMan.png" class="margin-right-small" />ABOUT ME</a>
                     </li>
                 </ul>
             </div>
@@ -90,11 +95,13 @@
                     </div>
                     <div class="col-sm-4 col-md-4">
                         <span style="font-size: 25px;">Navigate</span><hr class="navigation" />
-                        @Html.ActionLink("Main page", "Index", "Home", new { }, new { @class = "bigger-navigate-item" })
+                        @Html.ActionLink("Home page", "Index", "Home", new { }, new { @class = "bigger-navigate-item" })
                         <hr class="navigation-smaller" />
-                        @Html.ActionLink("Codes", "Index", "Tutorials", new { }, new { @class = "bigger-navigate-item" })
+                        @Html.ActionLink("asp.net", "Index", "Aspnet", new { }, new { @class = "bigger-navigate-item" })
                         <hr class="navigation-smaller" />
-                        @Html.ActionLink("Examples", "Index", "Programs", new { }, new { @class = "bigger-navigate-item" })
+                        @Html.ActionLink("HTML & JS", "Index", "Htmljs", new { }, new { @class = "bigger-navigate-item" })
+                        <hr class="navigation-smaller"/>
+                        @Html.ActionLink("Databases", "Index", "Databases", new { }, new { @class = "bigger-navigate-item" })
                         <hr class="navigation-smaller" />
                         @Html.ActionLink("About me", "Index", "About", new { }, new { @class = "bigger-navigate-item" })
                         <hr class="navigation-smaller" />

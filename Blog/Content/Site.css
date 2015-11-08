@@ -103,7 +103,8 @@ input[type="checkbox"].input-validation-error {
 }
 
 .navbar-brand {
-    background: url(../images/shared/logoWhite.png) no-repeat left;
+    background: url(../images/shared/logoWhite.png) no-repeat;
+    background-position: 5px;
     display: block;
     width: 160px;
     text-align: right;

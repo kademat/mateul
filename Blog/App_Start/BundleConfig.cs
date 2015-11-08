@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace Blog
+namespace jstcode
 {
     public class BundleConfig
     {
