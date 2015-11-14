@@ -1,24 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.WebSockets
+@{
+    string currentControllerName = ViewContext.RouteData.Values["Controller"].ToString();
+    Dictionary<string, string> actionNameDispayNameDictionary = new Dictionary<string, string>();
+    actionNameDispayNameDictionary.Add("Aspnet", "ASP.NET");
+    actionNameDispayNameDictionary.Add("Htmljs", "HTML & JS");
+    actionNameDispayNameDictionary.Add("Databases", "Databases");
+    actionNameDispayNameDictionary.Add("About", "About me");
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Source code based website with tutorials, ASP.NET, HTML, JS and Databases">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, ASP.NET, Database, Databases, jstcode, just simple typing code">
     <title>jstcode.com - just simple typing code</title>
     <link rel="icon" type="image/png" href="../../images/shared/fav.png" alt="Fav ico">
-    <!--core-->
-    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
-    <script src="~/Scripts/wow.min.js"></script>
-    <!--mine-->
-    <script src="~/Scripts/mineHovers.js"></script>
-    <link href="~/Content/animate.css" rel="stylesheet" />
-    <!--highlight-->
-    <script src="~/Scripts/shCore.js"></script>
-    <script src="~/Scripts/shBrushJScript.js"></script>
-    <script src="~/Scripts/shBrushCss.js"></script>
-    <script src="~/Scripts/shBrushCSharp.js"></script>
-    <link href="~/Content/shThemeDefault.css" rel="stylesheet" />
-    <link href="~/Content/shCore.css" rel="stylesheet" />
-    <!-- tocify -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/animateHighlight")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -26,20 +26,11 @@
 <body>
 
     <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
+    <script src="~/Scripts/main/facebook.js"></script>
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-
                 @Html.ActionLink("jstcode.com", "Index", "Home", new { }, new { @class = "navbar-brand" })
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -50,20 +41,17 @@
             <!--Other links on a page-->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Aspnet") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Aspnet")'><img src="~/images/nav/braces.png" class="margin-right-small"/>ASP.NET</a>
-                    </li>
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Htmljs") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Htmljs")'><img src="~/images/nav/codeTag.png" class="margin-right-small"/>HTML & JS
-                        </a>
-                    </li>
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Databases") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "Databases")'><img src="~/images/nav/database.png" class="margin-right-small" />DATABASES
-                        </a>
-                    </li>
-                    <li class="animate-img @(ViewContext.RouteData.Values["Controller"].ToString().Equals("About") ? "underline-text" : "")">
-                        <a href='@Url.Action("Index", "About")'><img src="~/images/nav/businessMan.png" class="margin-right-small" />ABOUT ME</a>
-                    </li>
+                    @foreach (var actionNameDispayName in actionNameDispayNameDictionary)
+                    {
+                        <li class="animate-img
+                            @(currentControllerName.Equals(actionNameDispayName.Key) ? "underline-text" : "")">
+                            <a href='@Url.Action("Index", actionNameDispayName.Key)'>
+                                <img src=@("/images/nav/" + actionNameDispayName.Key + ".png")
+                                     class="margin-right-small" alt="Navbar icon" />
+                                @actionNameDispayName.Value
+                            </a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -71,15 +59,14 @@
     <!--Whole body container-->
     <div class="container">
         @RenderBody()
-
-
+        <!-- footer of the page -->
         <div class="row shadows footer">
             <footer>
                 <div class="beam"></div>
-                <div style="background-color: #888; padding: 15px; color: #ddd" class="col-sm-12 col-md-12">
+                <div class="footer-background col-sm-12 col-md-12">
                     <div class="col-sm-4 col-md-4">
-                        <img src="~/images/shared/logoWhite.png" style="vertical-align: middle" height="36" />
-                        <span style="font-size: 25px; vertical-align: middle;">jstcode.com<br /></span>
+                        <img src="~/images/shared/logoWhite.png" alt="White logo" class="vertical-alligned" height="36" />
+                        <span class="vertical-alligned footer-big-text">jstcode.com<br /></span>
                         <hr class="navigation" />
                         <span>
                             You are allowed to use all the codes and examples that you can find on the website.
@@ -87,28 +74,26 @@
                     </div>
 
                     <div class="col-sm-4 col-md-4">
-                        <span style="font-size: 25px; vertical-align: middle; height: 30px;">Contact me<br /></span>
+                        <span class="vertical-alligned footer-big-text footer-default-height">Contact me<br /></span>
                         <hr class="navigation" />
                         <span>
                             e-mail: kademat[at]gmail.com
                         </span>
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <span style="font-size: 25px;">Navigate</span><hr class="navigation" />
+                        <span class="footer-big-text">Navigate</span>
+                        <hr class="navigation" />
                         @Html.ActionLink("Home page", "Index", "Home", new { }, new { @class = "bigger-navigate-item" })
                         <hr class="navigation-smaller" />
-                        @Html.ActionLink("asp.net", "Index", "Aspnet", new { }, new { @class = "bigger-navigate-item" })
-                        <hr class="navigation-smaller" />
-                        @Html.ActionLink("HTML & JS", "Index", "Htmljs", new { }, new { @class = "bigger-navigate-item" })
-                        <hr class="navigation-smaller"/>
-                        @Html.ActionLink("Databases", "Index", "Databases", new { }, new { @class = "bigger-navigate-item" })
-                        <hr class="navigation-smaller" />
-                        @Html.ActionLink("About me", "Index", "About", new { }, new { @class = "bigger-navigate-item" })
-                        <hr class="navigation-smaller" />
+                        @foreach (var actionNameDispayName in actionNameDispayNameDictionary)
+                        {
+                            @Html.ActionLink(actionNameDispayName.Value, "Index", actionNameDispayName.Key, new { }, new { @class = "bigger-navigate-item" })
+                            <hr class="navigation-smaller" />
+                        }
                     </div>
                 </div>
-                <div style="background-color: #444; color: #ddd">
-                    <span style="color: white; padding: 10px;">
+                <div class="footer-bottom" style="">
+                    <span class="footer-bottom-text">
                         &copy; @DateTime.Now.Year - jstcode.com. This page using <a href="http://glyphicons.com/" target="_blank">glyphicons</a>.
                     </span>
                 </div>
@@ -116,12 +101,8 @@
         </div>
     </div>
     <!--Rendering the scripts-->
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    <link href="~/Content/jquery.tocify.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-ui.min.js"></script>
-    <script src="~/Scripts/jquery.tocify.min.js"></script>
-    <script src="/Scripts/quotes.js"></script>
+    @Scripts.Render("~/bundles/tocify")
     @RenderSection("scripts", required: false)
 </body>
 </html>

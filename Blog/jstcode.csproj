@@ -107,31 +107,29 @@
     <Content Include="Content\jquery.tocify.css" />
     <Content Include="Content\shThemeDefault.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="images\nav\braces.png" />
-    <Content Include="images\nav\businessMan.png" />
-    <Content Include="images\nav\codeTag.png" />
-    <Content Include="images\nav\database.png" />
+    <Content Include="images\nav\Aspnet.png" />
+    <Content Include="images\nav\About.png" />
+    <Content Include="images\nav\Htmljs.png" />
+    <Content Include="images\nav\Databases.png" />
     <Content Include="images\shared\bedge_grunge.png" />
     <Content Include="images\home\runningPrograms.png" />
     <Content Include="images\shared\logo.png" />
     <Content Include="images\shared\logoWhite.png" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\main\bootstrap.js" />
+    <Content Include="Scripts\main\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\jstcode.pubxml" />
-    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="Scripts\examples\radious.js" />
-    <Content Include="Scripts\jquery-1.11.3.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jquery-ui.js" />
-    <Content Include="Scripts\jquery-ui.min.js" />
-    <Content Include="Scripts\jquery.tocify.js" />
-    <Content Include="Scripts\jquery.tocify.min.js" />
-    <Content Include="Scripts\npm.js" />
-    <Content Include="Scripts\quotes.js" />
-    <Content Include="Scripts\shBrushCSharp.js" />
-    <Content Include="Scripts\shBrushCss.js" />
-    <Content Include="Scripts\shBrushJScript.js" />
+    <Content Include="Scripts\htmljs\radious.js" />
+    <Content Include="Scripts\main\facebook.js" />
+    <Content Include="Scripts\main\jquery-1.11.3.js" />
+    <Content Include="Scripts\main\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\main\jquery-ui.js" />
+    <Content Include="Scripts\main\jquery-ui.min.js" />
+    <Content Include="Scripts\main\jquery.tocify.js" />
+    <Content Include="Scripts\main\jquery.tocify.min.js" />
+    <Content Include="Scripts\main\quotes.js" />
+    <Content Include="Scripts\main\shBrushCSharp.js" />
+    <Content Include="Scripts\main\shBrushCss.js" />
+    <Content Include="Scripts\main\shBrushJScript.js" />
     <Content Include="Content\shCore.css" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
@@ -167,25 +165,23 @@
     <None Include="Properties\PublishProfiles\test.pubxml">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Scripts\jquery.tocify.min.js.map">
+    <Content Include="Scripts\main\jquery.tocify.min.js.map">
       <DependentUpon>jquery.tocify.min.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-2.1.4.min.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\main\jquery.validate-vsdoc.js" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.min.css" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\mineHovers.js" />
-    <Content Include="Scripts\shCore.js" />
-    <Content Include="Scripts\translations.js" />
-    <Content Include="Scripts\wow.js" />
-    <Content Include="Scripts\wow.min.js" />
+    <Content Include="Scripts\main\jquery.validate.js" />
+    <Content Include="Scripts\main\jquery.validate.min.js" />
+    <Content Include="Scripts\main\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\main\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main\modernizr-2.6.2.js" />
+    <Content Include="Scripts\main\respond.js" />
+    <Content Include="Scripts\main\respond.min.js" />
+    <Content Include="Scripts\main\mineHovers.js" />
+    <Content Include="Scripts\main\shCore.js" />
+    <Content Include="Scripts\main\wow.js" />
+    <Content Include="Scripts\main\wow.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -219,11 +215,11 @@
     <Content Include="Views\Shared\_LayoutDisqus.cshtml" />
     <Content Include="Views\Aspnet\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCodes.cshtml" />
-    <Content Include="Views\Htmljs\JSBasics.cshtml" />
     <Content Include="Views\Shared\_LayoutInside.cshtml" />
-    <Content Include="Views\ViewsInProgress\Translations.cshtml" />
     <Content Include="Views\Htmljs\Radious.cshtml" />
     <Content Include="Views\Databases\Index.cshtml" />
+    <Content Include="Views\Htmljs\JsArrays.cshtml" />
+    <Content Include="Views\Htmljs\JsFunctions.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -232,6 +228,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>

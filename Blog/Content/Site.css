@@ -78,6 +78,10 @@ input[type="checkbox"].input-validation-error {
 	margin-left: 10px;
 }
 
+.float-right {
+    float: right;
+}
+
 .margin-right-default {
 	margin-right: 10px;
 }
@@ -171,14 +175,6 @@ input[type="checkbox"].input-validation-error {
 	background-color: #7bb8f2 !important;
 }
 
-.code {
-	margin-top: 10px;
-	margin-bottom: 5px;
-	width: 100%;
-	border: none;
-	height: 300px;
-}
-
 .form-space {
 	margin-bottom: 15px;
 	margin-right: 10px;
@@ -212,4 +208,66 @@ hr.navigation-smaller {
 .bigger-navigate-item:hover {
     color: white;
     font-weight: bold;
+}
+
+.footer-background {
+    background-color: #888;
+    padding: 15px;
+    color: #ddd
+}
+
+.vertical-alligned {
+    vertical-align: middle;
+}
+
+.footer-big-text {
+    font-size: 25px;
+}
+
+.footer-default-height {
+    height: 30px;
+}
+
+.footer-bottom {
+    background-color: #444;
+    color: #ddd;
+}
+
+.footer-bottom-text {
+    color: white;
+    padding: 10px;
+}
+
+#sidebar {
+   position: fixed;
+   width: 25%;
+}
+@media (min-width: 768px) {
+  #sidebar {
+    width: 158px; /* 632 * .25 */
+  }
+}
+@media (min-width: 992px) {
+  #sidebar {
+    width: 213px; /* 852 * .25 */
+  }
+}
+@media (min-width: 1200px) {
+  #sidebar {
+    width: 263px; /* 1052 * .25 */
+  }
+}
+
+
+.code {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	height: 300px;
+    width: 100%;
+    outline: 1px solid rgb(170,170,170);
+    border: 0 !important;
+}
+
+.error {
+    color: red;
 }

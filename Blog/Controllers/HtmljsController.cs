@@ -16,8 +16,12 @@ namespace jstcode.Controllers
             return View();
         }
 
-        // GET: /JsBasics/
-        public ActionResult JsBasics()
+        public ActionResult JsArrays()
+        {
+            return View();
+        }
+        
+        public ActionResult JsFunctions()
         {
             return View();
         }
